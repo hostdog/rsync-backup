@@ -1,0 +1,41 @@
+## System Directories
+
+/boot/
+/dev/
+/lost+found/
+/opt/
+/proc/
+/sbin/
+/srv/
+/sys/
+/tmp/
+/var/cache/
+/var/spool/
+/var/run/
+/run/
+/var/tmp/
+.Trash
+.spam
+/swapfile
+
+
+## Extra mounted disks and backup directories 
+/media/
+/mnt/
+
+## MySQL open files
+/var/lib/mysql/
+
+## Cloudlinux & CPanel Virtual mounts 
+/usr/tmpDSK
+/home/virtfs
+/usr/share/cagefs-skeleton/
+/var/cagefs/
+/var/cache/optimumcache
+
+## Wordpress Cache directories
+/home/*/public_html/wp-content/cache/
+/home/*/public_html/*/wp-content/cache/
+/home/*/public_html/var/cache/
+/home/*/public_html/*/var/cache/
+
