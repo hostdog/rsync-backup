@@ -86,7 +86,7 @@ echo "--------------------------------------------------------------------------
 echo "- START RSYNC for $server at $(date +%Y%m%d-%H:%M) hardlinks from $last_backup destination folder day_${date}" >>/var/log/backups/${server}_stout.log;
 
 # SYNC with IP
-ionice -c3 rsync -ahv --log-file=/var/log/backups/${server}_rsync.log --delete --link-dest=../$last_backup --exclude-from=backup_exclude --rsh="/usr/bin/ssh -p ${ssh_port}" root@${server_ip}:/ temp_rsync >> /var/log/backups/${server}_stout.log && mv temp_rsync day_${today}
+ionice -c3 rsync -ahv --log-file=/var/log/backups/${server}_rsync.log --delete --link-dest=../$last_backup --exclude-from=backup_exclude --rsh="/usr/bin/ssh -p ${ssh_port}" root@${server_ip}:/ temp_rsync >> /var/log/backups/${server}_stout.log ; mv temp_rsync day_${today}
 
 echo "- END RSYNC for $server at $(date +%Y%m%d-%H:%M)" >>/var/log/backups/${server}_stout.log;
 echo "----------------------------------------------------------------------------------------- " >>/var/log/backups/${server}_stout.log;
