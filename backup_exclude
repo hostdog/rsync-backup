@@ -1,5 +1,4 @@
 ## System Directories
-
 /boot/
 /dev/
 /lost+found/
@@ -18,24 +17,53 @@
 .spam
 /swapfile
 
-
 ## Extra mounted disks and backup directories 
 /media/
 /mnt/
 
+## Munin rrd files
+/var/lib/munin/
+
 ## MySQL open files
 /var/lib/mysql/
 
+## PHP FPM temporary files 
+/var/lib/php/sessions 
+
+## Nginx FastCGI 
+/var/lib/nginx/fastcgi
+
 ## Cloudlinux & CPanel Virtual mounts 
 /usr/tmpDSK
+/var/cpanel/bandwidth
 /home/virtfs
 /usr/share/cagefs-skeleton/
 /var/cagefs/
 /var/cache/optimumcache
+/var/cpanel/email_send_limits/cache
+/var/cpanel/caches
+/var/cpanel/configs.cache
+/var/cpanel/sessions
+/var/cpanel/users.cache
+/var/cpanel/user_pw_cache
+/var/cpanel/sessions/cache
+/var/cpanel/pw.cache
+/var/cpanel/bandwidth.cache
+/home/*/.cagefs/var/cpanel/php/sessions
+/home/*/.cagefs/tmp
+/home/*/.cagefs/opt/alt/*/var/lib/php/session
 
 ## Wordpress Cache directories
 /home/*/public_html/wp-content/cache/
 /home/*/public_html/*/wp-content/cache/
 /home/*/public_html/var/cache/
 /home/*/public_html/*/var/cache/
+
+## Users tmp and cache directories 
+/home/*/tmp
+
+## Backup Folder
+/backup
+
+## Custom rules
 
