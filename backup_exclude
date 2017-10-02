@@ -62,8 +62,8 @@
 ## Users tmp and cache directories 
 /home/*/tmp
 
-## Backup Folder
-/backup
+## Hypervisor Excludes
+/var/lib/lxcfs/cgroup/
 
 ## Custom rules
 
